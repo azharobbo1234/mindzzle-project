@@ -11,7 +11,7 @@
             <router-link to="/" class="w3-bar-item w3-button">
                 <span><i class="fas fa-user" style="margin-right: 10px"></i></span>Profile
             </router-link>
-            <router-link to="" class="w3-bar-item w3-button">
+            <router-link to="/jobsearch" class="w3-bar-item w3-button">
                 <span><i class="fas fa-briefcase" style="margin-right: 10px"></i></span>Search Job
             </router-link>
             <div style="background-color:#3E4A58;" class="pb-0 mb-0">
@@ -43,7 +43,7 @@
                 <span><i class="fas fa-money-check-alt" style="margin-right: 10px"></i></span>Playslip
             </router-link>
             <router-link to="" class="w3-bar-item w3-button">
-                <span><i class="fas fa-id-card" style="margin-right: 10px;"></i></span>Dashboard
+                <span><i class="fas fa-chart-bar" style="margin-right: 10px;"></i></span>Dashboard
             </router-link>
             <router-link to="" class="w3-bar-item w3-button">
                 <span><i class="fas fa-history" style="margin-right: 10px"></i></span>Attendance
@@ -89,7 +89,7 @@
                 <div class="col-md-12" style="padding-left: 0px;padding-right: 0px">
                     <div class="card p-5">
                         <div class="table-responsive-lg text-left">
-                            <table class="table" id="tableu">
+                            <table class="table" id="table">
                                 <thead>
                                     <tr>
                                         <th>Name</th>
@@ -261,10 +261,16 @@ export default {
              else if (tmp == "certification") {
                 this.certification_slide = !this.certification_slide
             }
-        }
+        },
+        w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        },
+        w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }  
     },
     mounted() {
-        document.getElementsById("#tableu").dataTable();
+        $("#table").dataTable();
     }
 }
 </script>

@@ -11,7 +11,7 @@
             <router-link to="/" class="w3-bar-item w3-button">
                 <span><i class="fas fa-user" style="margin-right: 10px"></i></span>Profile
             </router-link>
-            <router-link to="" class="w3-bar-item w3-button">
+            <router-link to="/jobsearch" class="w3-bar-item w3-button">
                 <span><i class="fas fa-briefcase" style="margin-right: 10px"></i></span>Search Job
             </router-link>
             <div style="background-color:#3E4A58;" class="pb-0 mb-0">
@@ -43,7 +43,7 @@
                 <span><i class="fas fa-money-check-alt" style="margin-right: 10px"></i></span>Playslip
             </router-link>
             <router-link to="" class="w3-bar-item w3-button">
-                <span><i class="fas fa-id-card" style="margin-right: 10px;"></i></span>Dashboard
+                <span><i class="fas fa-chart-bar" style="margin-right: 10px;"></i></span>Dashboard
             </router-link>
             <router-link to="" class="w3-bar-item w3-button">
                 <span><i class="fas fa-history" style="margin-right: 10px"></i></span>Attendance
@@ -74,7 +74,7 @@
 
         <div class="container-fluid" style="padding: 70px">
             <div class="row">
-                <div class="col-sm-3" id="profile"><h1>Profile</h1></div>
+                <div class="col-sm-3" id="profile"><h1 class="display-4">Profile</h1></div>
                 <div class="col-sm-6"></div>
                 <div class="col-sm-3">
                     <button class="btn btn-success mindzzle-button-2 m-2" id="download_pdf">
@@ -1116,104 +1116,3 @@ input {
 
 /* user_profile styling */
 </style>
-
-<!-- ******* ******* *** sidebar *** ******* ******* -->
-            <!-- ******* ******* sidebar sidebar ******* ******* -->
-            <!-- ******* sidebar sidebar sidebar sidebar ******* -->
-            <!-- sidebar sidebar sidebar sidebar sidebar sidebar -->
-            <!-- ******* sidebar sidebar sidebar sidebar ******* -->
-            <!-- ******* ******* sidebar sidebar ******* ******* -->
-            <!-- ******* ******* *** sidebar *** ******* ******* -->
-
-            <!-- <div class="col-lg-2" style="background-color: #1D232A;">
-                <div class="row" id="sidebar-logo" style="background-color: #E96F24; margin-bottom: 20px">
-                    <img v-bind:src="mindzzle_logo.src" v-bind:alt="mindzzle_logo.alt" v-bind:href="mindzzle_logo.href" id="mindzzle-logo">
-                </div>
-                <div id="sidebar-content">
-                    <div class="row">
-                        <div class="left-filler">
-                            <p class="sidebar-title">MAIN MENU</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <router-link to='/' style="color: white"><p><span><i class="fas fa-user" style="margin-right: 10px"></i></span>Profile</p></router-link>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-briefcase" style="margin-right: 10px"></i></span>Search Job</p>
-                        </div>
-                    </div>
-                    <div class="row" id="workspace">
-                        <div class="left-filler">
-                            <p class="sidebar-title">YOUR WORKSPACE</p>
-                            <div class="row">
-                                <div class="col-md-1" style="margin-top: 5px">
-                                    <i class="fas fa-circle fa-lg"></i>
-                                </div>
-                                <div class="col-md-7"  style="color: #FFB486;font-size: 12px;">
-                                    <p>PT. Sumber Solusindo Pratama</p>
-                                </div>
-                                <div class="col-md-1"><i class="fas fa-sort-down"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" style="margin-top: 10px">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-id-card" style="margin-right: 10px;"></i></span>Dashboard</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-history" style="margin-right: 10px"></i></span>Approval Status</p>    
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-tasks" style="margin-right: 10px"></i></span>Company Goals</p>    
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-tasks" style="margin-right: 10px"></i></span>Tasks</p>
-                        </div>   
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-money-check-alt" style="margin-right: 10px"></i></span>Playslip</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-history" style="margin-right: 10px"></i></span>Manage Attendance</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <p><span><i class="fas fa-money-check-alt" style="margin-right: 10px"></i></span>Manage Payroll</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="left-filler">
-                            <router-link to='/employee' style="color: white"><span><i class="fas fa-money-check-alt" style="margin-right: 10px;"></i></span>Employee</router-link>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- ******* ******* *** sidebar *** ******* ******* -->
-            <!-- ******* ******* sidebar sidebar ******* ******* -->
-            <!-- ******* sidebar sidebar sidebar sidebar ******* -->
-            <!-- sidebar sidebar sidebar sidebar sidebar sidebar -->
-            <!-- ******* sidebar sidebar sidebar sidebar ******* -->
-            <!-- ******* ******* sidebar sidebar ******* ******* -->
-            <!-- ******* ******* *** sidebar *** ******* ******* -->
-
-
-
-            <!-- content ******* content ******* content *******  -->
-            <!-- content ******* content ******* content *******  -->
-            <!-- content ******* content ******* content *******  -->
-            <!-- content ******* content ******* content *******  -->
-            <!-- content ******* content ******* content *******  -->
-            <!-- content ******* content ******* content *******  -->
