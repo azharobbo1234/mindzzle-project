@@ -1,5 +1,5 @@
 <template>
-    <div class="tugas_pertama">
+    <div class="profile">
         <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:220px;background-color: #1D232A;color:white;" id="mySidebar">
             <button class="w3-bar-item w3-button w3-large w3-hide-large" @click="w3_close()">Close &times;</button>
             <div style="background-color: #E96F24; margin-bottom: 20px"> 
@@ -74,9 +74,10 @@
 
         <div class="container-fluid" style="padding: 70px">
             <div class="row">
-                <div class="col-md-9" id="profile"><h1>Profile</h1></div>
-                <div class="col-md-3">
-                    <button class="btn btn-success mindzzle-button-2" id="download_pdf">
+                <div class="col-sm-3" id="profile"><h1>Profile</h1></div>
+                <div class="col-sm-6"></div>
+                <div class="col-sm-3">
+                    <button class="btn btn-success mindzzle-button-2 m-2" id="download_pdf">
                         <p class="mindzzle-text">
                         <span style="margin-right: 10px"><i class="fas fa-download"></i></span>download as pdf
                         </p>
@@ -85,7 +86,7 @@
             </div>
             <div class="row">
                 <!-- userprofile -->
-                <div class="col-lg-4">
+                <div class="col-lg-4 mb-2">
                     <div class="card">
                         <div id="fake-header">
                             <h5 class="text-muted" style="text-align: center">Edit Profile<span style="margin-left: 10px"><a @click="edit_profile" class="clickable_icon"><i class="fas fa-pencil-alt"></i></a></span></h5>
@@ -648,7 +649,7 @@
                                         <div class="input-group">
                                             <!-- <input type="text" class="form-control" placeholder="High School"> -->
                                             <select class="form-control" v-model="educations_entry.degree_title">
-                                                <option v-for="degree in degrees" :value="degree">{{degree}}</option>
+                                                <option v-for="degree in degrees" :value="degree" v-bind:key="degree">{{degree}}</option>
                                             </select>
                                         </div>
                                     </div>
@@ -764,7 +765,7 @@
                                         <div class="input-group">
                                             <!-- <input type="text" class="form-control" v-model="educations_entry.field_study" placeholder="Business Management"> -->
                                             <select class="form-control" v-model="achievement_entry.scope">
-                                                <option v-for="scope in scopes" :value="scope">{{scope}}</option>
+                                                <option v-for="scope in scopes" :value="scope" v-bind:key="scope">{{scope}}</option>
                                             </select>
                                         </div>
                                     </div>
@@ -784,11 +785,8 @@
     </div>
 </template>
 <script>
-$(function () {
-   $('#modal').modal('toggle');
-});
 export default {
-    name:"tugas_pertama",
+    name:"profile",
     data() {
         return {
             nama: "azhar",
@@ -1011,6 +1009,9 @@ export default {
         w3_close() {
             document.getElementById("mySidebar").style.display = "none";
         }        
+    },
+    mounted() {
+        document.getElementById("#modal").modal("toggle");
     }
 }
 </script>

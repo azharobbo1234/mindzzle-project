@@ -1,8 +1,8 @@
 import employee from './components/employee.vue';
-import tugas_pertama from './components/tugas-pertama.vue';
+import profile from './components/profile.vue';
 
 const routes = [
-    {path: '/', component: tugas_pertama},
+    {path: '/', component: profile},
     {path: '/employee', component: employee},
 ];
 
